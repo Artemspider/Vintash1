@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.main{
+	width:100%;
+	background-color: #F5F5F0;
+	color: #5D866C;
+}
+
+.content{
+	text-align: center;
+	padding: 40px 0;
+}
+
+.main img{
+	width: 1000px;
+	height: 750px;
+}
+
+.main h1{
+	font-size: 80px;
+}
+
+.concerts {
+	background-color: #C2A68C;
+	padding: 40px 20px;
+}
+
+.concerts-title {
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 40px;
+	color: #5D3836;
+}
+
+.concerts-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.concert-item {
+	text-align: center;
+	max-width: 300px;
+}
+
+.concert-item img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.concert-item h3 {
+	margin-top: 15px;
+	font-size: 32px;
+	color: #5D3836;
+}
+.concert-item h4 {
+	margin-top: 15px;
+	font-size: 28px;
+	color: #5D3836;
+}
