@@ -7,31 +7,107 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="main">
-		<div class="content">
-			<img src="f165ca44e441b8b6401be5d4b740ecbb.jpg">
-			<h1>Винтаж</h1>
+	<!-- Навигация -->
+	<nav class="navbar">
+		<div class="nav-container">
+			<label for="tab1" class="nav-item">Главная</label>
+			<label for="tab2" class="nav-item">Музыка</label>
+			<label for="tab3" class="nav-item">Контакты</label>
 		</div>
-		<div class="concerts">
-			<h1 class="concerts-title">Афиша</h1>
-			<div class="concerts-container">
-				<div class="concert-item">
-					<img src="gipsy.jpg">
-					<h3>Москва GIPSY</h3>
-					<h4>24.10.2025</h4>
+	</nav>
+
+	<input type="radio" name="tabs" id="tab1" checked>
+	<input type="radio" name="tabs" id="tab2">
+	<input type="radio" name="tabs" id="tab3">
+
+	<!-- Главная страница -->
+	<section id="content1" class="tab-content">
+		<div class="main">
+			<div class="content">
+				<img src="f165ca44e441b8b6401be5d4b740ecbb.jpg">
+				<h1>Винтаж</h1>
+			</div>
+			<div class="concerts">
+				<h1 class="concerts-title">Афиша</h1>
+				<div class="concerts-container">
+					<div class="concert-item">
+						<img src="gipsy.jpg">
+						<h3>Москва GIPSY</h3>
+						<h4>24.10.2025</h4>
+					</div>
+					<div class="concert-item">
+						<img src="TelRuud.jpg">
+						<h3>Израиль, Тель-Авив РИДИНГ 3</h3>
+						<h4>31.10.2025</h4>
+					</div>
+					<div class="concert-item">
+						<img src="RFLoor.jpg">
+						<h3>ОАЭ Дубай PALM JUMEIRAH MALL, R FLOOR</h3>
+						<h4>01.11.2025</h4>
+					</div>
 				</div>
-				<div class="concert-item">
-					<img src="TelRuud.jpg">
-					<h3>Израиль, Тель-Авив РИДИНГ 3</h3>
-					<h4>31.10.2025</h4>
-				</div>
-				<div class="concert-item">
-					<img src="RFLoor.jpg">
-					<h3>ОАЭ Дубай PALM JUMEIRAH MALL, R FLOOR</h3>
-					<h4>01.11.2025</h4>
+			</div>
+			<div class="form-section">
+				<h1 class="form-title">Регистрация на концерт</h1>
+				<div class="form-container">
+					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3a44YuVjE9aV239vsafFu3iYGtb0Ku_3qZVatUd_78mgSWg/viewform?usp=header" 
+							width="100%" 
+							height="1200" 
+							frameborder="0" 
+							marginheight="0" 
+							marginwidth="0">
+						Загрузка…
+					</iframe>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+
+	<!-- Музыка -->
+	<section id="content2" class="tab-content">
+		<div class="music-section">
+			<h1 class="music-title">Музыка</h1>
+			<div class="tracks-container">
+				<div class="track-item">
+					<h3>Eva (Kavkaz remix)</h3>
+					<p>Исполнители: Винтаж, Bedanokov, Люай
+</p>
+					<a href="https://music.yandex.ru/album/37183200?utm_source=web&utm_medium=copy_link" target="_blank" class="music-btn">Слушать в Яндекс.Музыке</a>
+				</div>
+				<div class="track-item">
+					<h3>Роман</h3>
+					<p>Исполнитель: Винтаж</p>
+					<a href="https://music.yandex.ru/track/44033945?utm_source=web&utm_medium=copy_link" target="_blank" class="music-btn">Слушать в Яндекс.Музыке</a>
+				</div>
+				<div class="track-item">
+					<h3>Ева</h3>
+					<p>Исполнитель: Винтаж</p>
+					<a href="https://music.yandex.ru/track/44070128?utm_source=web&utm_medium=copy_link" target="_blank" class="music-btn">Слушать в Яндекс.Музыке</a>
+				</div>
+				<div class="track-item">
+					<h3>Плохая девочка</h3>
+					<p>Исполнители: Винтаж, ТРАВМА, SKIDRI, DVRKLXGHT</p>
+					<a href="https://music.yandex.ru/track/115748634?utm_source=web&utm_medium=copy_link" target="_blank" class="music-btn">Слушать в Яндекс.Музыке</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Контакты -->
+	<section id="content3" class="tab-content">
+		<div class="contacts-section">
+			<h1 class="contacts-title">Контакты</h1>
+			<div class="contacts-container">
+				<div class="contacts-text">
+					<p>По вопросам сотрудничества и организации концертов:</p>
+					<p>Телефон: 8 (985) 999-57-40 </p>
+					<p>Менеджер: ЛУКИНА ЕЛИЗАВЕТА</p>
+				</div>
+				<div class="contacts-image">
+					<img src="contacts.jpg" alt="Контакты группы Винтаж">
+				</div>
+			</div>
+		</div>
+	</section>
 </body>
 </html>

@@ -1,69 +1,350 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+
+
 *{
+
 	padding: 0;
+
 	margin: 0;
+
 }
 
+
+
 .main{
+
 	width:100%;
+
+	background-color: #F5F5F0;
+
+	color: #5D866C;
+
+}
+
+
+
+.content{
+
+	text-align: center;
+
+	padding: 40px 0;
+
+}
+
+
+
+.main img{
+
+	width: 1000px;
+
+	height: 750px;
+
+}
+
+
+
+.main h1{
+
+	font-size: 80px;
+
+}
+
+
+
+.concerts {
+
+	background-color: #C2A68C;
+
+	padding: 40px 20px;
+
+}
+
+
+
+.concerts-title {
+
+	text-align: center;
+
+	font-size: 60px;
+
+	margin-bottom: 40px;
+
+	color: #5D3836;
+
+}
+
+
+
+.concerts-container {
+
+	display: flex;
+
+	justify-content: space-around;
+
+	flex-wrap: wrap;
+
+	gap: 30px;
+
+}
+
+
+
+.concert-item {
+
+	text-align: center;
+
+	max-width: 300px;
+
+}
+
+
+
+.concert-item img {
+
+	width: 100%;
+
+	height: 200px;
+
+	object-fit: cover;
+
+	border-radius: 10px;
+
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+
+}
+
+
+
+.concert-item h3 {
+
+	margin-top: 15px;
+
+	font-size: 32px;
+
+	color: #5D3836;
+
+}
+
+.concert-item h4 {
+
+	margin-top: 15px;
+
+	font-size: 28px;
+
+	color: #5D3836;
+
+}
+
+
+
+/* Стили для секции с формой */
+
+.form-section {
+
+	background-color: #5D866C;
+
+	padding: 40px 20px;
+
+}
+
+
+
+.form-title {
+
+	text-align: center;
+
+	font-size: 60px;
+
+	margin-bottom: 40px;
+
+	color: #233228;
+
+}
+
+
+
+.form-container {
+
+	max-width: 800px;
+
+	margin: 0 auto;
+
+	background-color: #d7e3db;
+
+	border-radius: 15px;
+
+	padding: 20px;
+
+	box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+
+}
+
+
+
+.form-container iframe {
+
+	border: none;
+
+	border-radius: 10px;
+
+}
+/* Добавляем эти стили в конец style.css */
+
+/* Навигация */
+.navbar {
+	background-color: #5D866C;
+	padding: 15px 0;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.nav-container {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+}
+
+.nav-item {
+	color: #F5F5F0;
+	font-size: 24px;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+	background-color: #4A6B58;
+}
+
+/* Скрываем радио-кнопки */
+input[type="radio"] {
+	display: none;
+}
+
+/* Содержимое вкладок */
+.tab-content {
+	display: none;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+	display: block;
+}
+
+/* Стили для активной вкладки */
+#tab1:checked ~ .navbar .nav-container label[for="tab1"],
+#tab2:checked ~ .navbar .nav-container label[for="tab2"],
+#tab3:checked ~ .navbar .nav-container label[for="tab3"] {
 	background-color: #F5F5F0;
 	color: #5D866C;
 }
 
-.content{
-	text-align: center;
-	padding: 40px 0;
-}
-
-.main img{
-	width: 1000px;
-	height: 750px;
-}
-
-.main h1{
-	font-size: 80px;
-}
-
-.concerts {
-	background-color: #C2A68C;
+/* Стили для секции музыки */
+.music-section {
+	background-color: #F5F5F0;
 	padding: 40px 20px;
+	min-height: 100vh;
 }
 
-.concerts-title {
+.music-title {
 	text-align: center;
 	font-size: 60px;
 	margin-bottom: 40px;
-	color: #5D3836;
+	color: #5D866C;
 }
 
-.concerts-container {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+.tracks-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 30px;
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-.concert-item {
+.track-item {
+	background-color: #d7e3db;
+	padding: 25px;
+	border-radius: 15px;
 	text-align: center;
-	max-width: 300px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.concert-item img {
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-.concert-item h3 {
-	margin-top: 15px;
-	font-size: 32px;
-	color: #5D3836;
-}
-.concert-item h4 {
-	margin-top: 15px;
+.track-item h3 {
 	font-size: 28px;
 	color: #5D3836;
+	margin-bottom: 15px;
+}
+
+.track-item p {
+	font-size: 20px;
+	color: #5D866C;
+	margin-bottom: 20px;
+}
+
+.music-btn {
+	display: inline-block;
+	background-color: #5D866C;
+	color: #F5F5F0;
+	padding: 12px 25px;
+	text-decoration: none;
+	border-radius: 8px;
+	font-size: 18px;
+	transition: background-color 0.3s;
+}
+
+.music-btn:hover {
+	background-color: #4A6B58;
+}
+
+/* Стили для секции контактов */
+.contacts-section {
+	background-color: #F5F5F0;
+	padding: 40px 20px;
+	min-height: 100vh;
+}
+
+.contacts-title {
+	text-align: center;
+	font-size: 60px;
+	margin-bottom: 40px;
+	color: #5D866C;
+}
+
+.contacts-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	gap: 40px;
+	flex-wrap: wrap;
+}
+
+.contacts-text {
+	flex: 1;
+	min-width: 300px;
+}
+
+.contacts-text p {
+	font-size: 24px;
+	color: #5D866C;
+	margin-bottom: 20px;
+	line-height: 1.6;
+}
+
+.contacts-image {
+	flex: 1;
+	min-width: 300px;
+	text-align: center;
+}
+
+.contacts-image img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
